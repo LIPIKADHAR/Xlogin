@@ -17,9 +17,10 @@ function XLogin() {
 
   return (
     <div style={{ width: "300px", margin: "100px auto", textAlign: "center" }}>
-      <h2>XLogin</h2>
+       <h2>Loginpage</h2>
 
-      <form onSubmit={handleLogin}>
+     <form onSubmit={handleLogin}>
+       <label>Username</label>
         <input
           type="text"
           placeholder="Username"
@@ -27,7 +28,7 @@ function XLogin() {
           onChange={(e) => setUsername(e.target.value)}
           style={{ width: "100%", marginBottom: "10px", padding: "8px" }}
         />
-
+         <label>Password</label>     
         <input
           type="password"
           placeholder="Password"
@@ -37,7 +38,7 @@ function XLogin() {
         />
 
         <button type="submit" style={{ width: "100%", padding: "8px" }}>
-          Login
+          Submit
         </button>
       </form>
 
